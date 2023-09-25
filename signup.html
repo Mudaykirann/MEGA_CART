@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <link rel="stylesheet" href="./signupstyles.css">
+    <body>
+        <header>
+            <div class="logo"><h3>Mega<b>Cart..</b></h3></div>
+            <nav class="nav">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">Contact Us</a>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <div class="containers">
+                <div class="containerleft">
+                    <img src="./images/shoppingimag.jpg" alt="">
+                </div>
+                <div class="containerright">
+                    <form  onsubmit="signup()">
+                        <h1>SIGNUP</h1>
+                        <input type="email" id="emailid" placeholder="Enter EmailID" required>
+                        <br>
+                        <input type="text" id="username" placeholder="Enter Username" required>
+                        <br>
+                        <input type="password" id="password" placeholder="Enter Password" required>
+                        <br>
+                        <input type="password" id="Cpassword" placeholder="Confirm Password" required>
+                        <br>
+                        <button id="btn">SIGNUP</button>
+                    </form>
+                    <div class="signup">
+                        <p>Already have an Account ? <a href="./login.html">LOGIN</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./signup.js"></script>
+    </body>
+
+</html>

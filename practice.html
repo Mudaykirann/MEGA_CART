@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="ele">
+            <ul class="listitems">
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script>
+
+const ul = document.querySelector(".listitems");
+
+// Function to handle item click
+
+var arr = []
+function onItemClick(itemData) {
+    arr.push({name:`${itemData.name}`,price:`${itemData.price}`})
+    localStorage.setItem("Cart",JSON.stringify(arr))
+    console.log(`Item clicked: ${itemData.name}`);
+}
+
+console.log(arr)
+
+// Fetch the JSON data and handle it
+fetch("./prices.json")
+    .then((res) => res.json())
+    .then((data) => {
+        for (let i = 0; i < data.items.length; i++) {
+            const li = document.createElement('li');
+            const heading = document.createElement('h3');
+            const img = document.createElement('img');
+
+            const itemData = data.items[i];
+
+            heading.textContent = itemData.name;
+            img.src = itemData.img;
+            img.alt = itemData.name;
+
+            // Add a click event listener to each li element
+            li.addEventListener('click', () => {
+                onItemClick(itemData);
+            });
+
+            li.appendChild(heading);
+            li.appendChild(img);
+            ul.appendChild(li);
+        }
+    })
+    .catch((error) => {
+        console.error('Error fetching or parsing data:', error);
+    });
+
+    
+    </script>
+</body>
+</html>
+

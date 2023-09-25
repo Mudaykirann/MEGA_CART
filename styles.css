@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all .5s;
+}
+body{
+    height: 100vh;
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+}
+header{
+    background-color: bisque;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h3 b{
+    color: darkmagenta;
+    font-size: 24px;
+}
+.logo{
+    padding: .5rem;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav a{
+    margin: .5rem 1.25rem;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.nav a:hover{
+    background-color: aqua;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 70px auto;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.containers h1{
+    text-align: center;
+}
+.containerleft img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.containerright{
+    height: 420px;
+    padding: 50px 50px ;
+    background-color: #ccc;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 5px 5px rgb(12, 9, 9);
+    flex-direction: column;
+}
+.containerright h1{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.containerright form label{
+    margin: .5rem 0;
+    font-size: 21px;
+}
+.containerright form #btn{
+    padding: 12px 105px;
+    font-size: 18px;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+grid-gap: 8px;
+align-items: center;
+background-color: #ff90e8;
+color: #000;
+border-radius: 4px;
+cursor: pointer;
+display: inline-flex;
+flex-shrink: 0;
+font-size: 16px;
+gap: 8px;
+justify-content: center;
+overflow: hidden;
+text-decoration: none;
+text-overflow: ellipsis;
+transition: all .14s ease-out;
+white-space: nowrap;
+}
+.containerright form #btn:hover {
+    box-shadow: 4px 4px 0 #000;
+    transform: translate(-4px,-4px);
+}
+.containerright form #btn:focus-visible{
+    outline-offset: 1px;
+}
+
+
+.containerright form input{
+  padding: 12px 50px;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 12px;
+  border: 1px solid lightgrey;
+  border-bottom-width: 2px;
+  font-size: 17px;
+  margin: 13px 0;
+}
+.containerright form input:hover{
+    transform: scale(1.1);
+}
+.containerright form input:focus{
+    border: 2px solid pink;
+    box-shadow: 2px 5px solid pink;
+}
+.containerright .signup{
+    font-size: 18px;
+
+}
+.wrapper p{
+    margin-top: 2rem;
+}
+#btn{
+    padding: .25rem;
+    margin: .25rem;
+}
+@media screen and(max-width:600px) {
+    .containers{
+        flex-direction: column;
+    }
+}
+.main-footer {
+    background-color: #51b6d8;
+    color: white;
+    padding: .35em 0;
+    margin-top: 3.5rem;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    padding: 0 .25em;
+}
+
+.footer-nav img {
+    width: 30px;
+    height: 30px;
+}
+.container ul {
+    list-style: none;
+}
+.band-name{
+    padding: .25em;
+    font-size: 22px;
+}

@@ -1,0 +1,32 @@
+{
+    "items":[
+        {
+            "id":1,
+            "name":"Clothing",
+            "img":"./images/clothing.jpg",
+            "price":2000
+        },
+        {
+            "id":2,
+            "name":"footwear",
+            "img":"./images/footwear.jpg",
+            "price":3000
+        },
+        {
+            "id":3,
+            "name":"beautyandhealth",
+            "img":"./images/health.jpg",
+            "price":5000
+        },
+        {
+            "id":4,
+            "name":"schoolbags",
+            "img":"./images/school.jpg",
+            "price":2000
+        }
+    ]
+
+}
+
+
+
